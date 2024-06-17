@@ -1,14 +1,17 @@
 package ua.pp.lumivoid.owouibuilder
 
-import javafx.fxml.FXML
-import javafx.scene.control.Label
+import org.slf4j.LoggerFactory
 
 class Controller {
-    @FXML
-    private lateinit var welcomeText: Label
+    private val logger = LoggerFactory.getLogger(this.javaClass)
 
-    @FXML
-    private fun onHelloButtonClick() {
-        welcomeText.text = "Welcome to JavaFX Application!"
-    }
+    // Just exhample
+//    @FXML
+//    private lateinit var welcomeText: Label
+//
+//    @FXML
+//    private fun onHelloButtonClick() {
+//        welcomeText.text = "Welcome to JavaFX Application!"
+//        logger.info("Welcome to JavaFX Application!")
+//    }
 }

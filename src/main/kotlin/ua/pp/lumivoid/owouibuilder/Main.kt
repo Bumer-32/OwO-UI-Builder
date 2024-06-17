@@ -5,11 +5,10 @@ import javafx.fxml.FXMLLoader
 import javafx.scene.Scene
 import javafx.scene.image.Image
 import javafx.stage.Stage
-import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
 class Main : Application() {
-    private val logger: Logger = LoggerFactory.getLogger("TEST")
+    private val logger = LoggerFactory.getLogger(this.javaClass)
 
     override fun start(stage: Stage) {
         val fxmlLoader = FXMLLoader(javaClass.getResource("views/main-view.fxml"))
@@ -19,7 +18,12 @@ class Main : Application() {
         stage.icons.add(Image(javaClass.getResourceAsStream("icons/owo.png")))
         stage.show()
 
-        logger.info("test")
+        logger.trace("This is a trace message");
+        logger.debug("This is a debug message");
+        logger.info("This is an info message");
+        logger.warn("This is a warning message");
+        logger.error("This is an error message");
+        println("This in an println")
     }
 }
 

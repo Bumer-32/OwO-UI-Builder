@@ -3,6 +3,7 @@ module ua.pp.lumivoid.owouibuilder {
     requires javafx.fxml;
     requires kotlin.stdlib;
     requires org.slf4j;
+    requires org.apache.logging.log4j;
 
 
     opens ua.pp.lumivoid.owouibuilder to javafx.fxml;
